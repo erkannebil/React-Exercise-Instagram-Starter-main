@@ -1,7 +1,6 @@
 // MUÜ için bu dosyayı değiştirmenize gerek yok
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import {
   faHeart,
   faCircle,
@@ -10,13 +9,21 @@ import {
 import "./AramaCubugu.css";
 
 const AramaCubugu = (props) => {
+  const { aramaKriteri, aramaFn } = props;
+
+  const handleChange = (evt) => {
+    const searchText = evt.target.value;
+    console.log(searchText);
+    aramaFn(searchText);
+  };
+
   return (
     <div className="search-bar-wrapper">
       <div className="social">
-        <FontAwesomeIcon icon={faInstagram} />
+        <FontAwesomeIcon icon={faHeart} />
       </div>
       <form className="search-form">
-        <input type="text" placeholder="Arama" />
+        <input type="text" placeholder="Arama" onChange={handleChange} />
       </form>
       <div className="social-wrapper">
         <div className="social">

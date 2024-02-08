@@ -4,6 +4,7 @@ import "./App.css";
 import Gonderiler from "./bilesenler/Gonderiler/Gonderiler";
 import AramaCubugu from "./bilesenler/AramaCubugu/AramaCubugu";
 import sahteVeri from "./sahte-veri";
+import { text } from "@fortawesome/fontawesome-svg-core";
 
 const App = () => {
 
@@ -16,9 +17,16 @@ const [aramaKriteri, setAramaKriteri] = useState("");
     console.log(gonderiler)
   };
 
+
+  const aramaFn= (text) =>{
+    setAramaKriteri(text);
+    let aramaSonucları = gonderiler.filter(gonderi => gonderi.username.includes(text));
+    setGonderiler(aramaSonucları);
+  }
+
   return (
     <div className="App">
-      <AramaCubugu />
+      <AramaCubugu  aramaKriteri={aramaKriteri} aramaFn={aramaFn} />
       <Gonderiler gonderiler = {gonderiler} gonderiyiBegen = {gonderiyiBegen}/>
     </div>
   );
