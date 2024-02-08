@@ -8,7 +8,11 @@ const Yorumlar = props => {
 
   return (
     <div>
-      {/* her gönderi yorumları için map'le işleyerek bir Yorum bileşeni döndürün (proplarına dikkat ederek)*/}
+      {yorumlar.map((yorum) => (
+        <Yorum 
+        key={yorum.id} 
+        yorum={yorum} />
+      ))};
     </div>
   );
 };
