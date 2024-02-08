@@ -21,9 +21,9 @@ const Gonderi = (props) => {
         />
       </div>
       {/* BegenBolumu düzgün çalışması için ihtiyaç duyduğu tüm proplara sahip mi? */}
-      <BegenBolumu gonderiyiBegen={() => gonderiyiBegen(gonderi.id)} begeniSayisi = {gonderi.likes}/>
+      <BegenBolumu gonderiyiBegen={() => gonderiyiBegen(gonderi.id)} />
       {/* Yorumlar da proplara dikkat istiyor! */}
-      <Yorumlar yorumlar = {gonderi.comments}/>
+      <Yorumlar />
     </div>
   );
 };
