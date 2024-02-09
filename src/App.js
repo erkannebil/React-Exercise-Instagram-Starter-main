@@ -12,9 +12,11 @@ const [gonderiler, setGonderiler] = useState(sahteVeri);
 const [aramaKriteri, setAramaKriteri] = useState("");
 
   const gonderiyiBegen = (gonderiID) => {
-    gonderiler.map(gonderi => (gonderi.id === gonderiID) && gonderi.likes++);
-    setGonderiler(gonderiler);
-    console.log(gonderiler)
+    let begeniData = gonderiler.map(gonderi => {
+      (gonderi.id === gonderiID) && gonderi.likes++;
+      return gonderi;
+    });
+    setGonderiler(begeniData);
   };
 
 
