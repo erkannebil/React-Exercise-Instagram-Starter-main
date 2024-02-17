@@ -45,7 +45,4 @@ Projenin son görüntüsü görseldeki gibi olmalıdır: [görsel için tıklay�
 - [ ]  sahte-veri.js dosyasında daha fazla sahte veri oluşturun ve arama çubuğuna arama işlevi ekleyin. Bunu yapmanın bir yolu filtre yöntemidir.
 - [ ]  Bir input kullanarak bir gönderiye yorum ekleme özelliğini uygulayın.
 - [ ]  Tüm uygulamanın stilini tamamlayın ve instagram klonunuzun verilen tasarım özelliklerine çok benzemesini sağlayın.
-<img width="1411" alt="image" src="https://github.com/erkannebil/React-Exercise-Instagram-Starter-main/assets/80630016/a53f348b-e573-448e-a1ea-982fd7130fa2">
-<img width="1430" alt="image" src="https://github.com/erkannebil/React-Exercise-Instagram-Starter-main/assets/80630016/10dbad30-5554-49c5-b02d-1bcc194d3bfa">
-
 
